@@ -1,22 +1,10 @@
-import {StyleSheet, Text, View} from 'react-native';
-import {Prop} from './types';
+import {Container, Name, Title} from './styles';
 
-export function Header({name}: Prop) {
+export function Header() {
   return (
-    <View>
-      <Text style={style.title}>Ola</Text>
-      <Text style={style.subTitle}>{name}</Text>
-    </View>
+    <Container>
+      <Title>Bem-Vindo!</Title>
+      <Name>Guibson</Name>
+    </Container>
   );
 }
-
-const style = StyleSheet.create({
-  title: {
-    color: 'black',
-    fontSize: 30,
-  },
-  subTitle: {
-    color: 'black',
-    fontSize: 15,
-  },
-});

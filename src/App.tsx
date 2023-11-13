@@ -5,7 +5,7 @@ import {Header} from './components/Header/Header';
 function App() {
   return (
     <SafeAreaView style={style.App}>
-      <Header name="Guibson" />
+      <Header />
     </SafeAreaView>
   );
 }
@@ -15,6 +15,7 @@ export default App;
 const style = StyleSheet.create({
   App: {
     flex: 1,
-    margin: 20,
+    // margin: 20,
+    backgroundColor: '#000',
   },
 });
