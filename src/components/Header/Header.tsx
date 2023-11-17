@@ -1,10 +1,13 @@
 import {Container, Name, Title} from './styles';
+import { Prop } from './types';
 
-export function Header() {
+
+
+export function Header({name, title} : Prop) {
   return (
     <Container>
-      <Title>Bem-Vindo!</Title>
-      <Name>Guibson</Name>
+      <Title>{title}</Title>
+      <Name>{name}</Name>
     </Container>
   );
 }
