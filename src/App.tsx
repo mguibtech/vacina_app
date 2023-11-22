@@ -1,23 +1,21 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
+import {Header} from './components/Header/Header';
 
-const App: React.FC = () => {
+function App() {
   return (
     <SafeAreaView style={style.App}>
-      <Text style={style.title}>Testando app do SRC</Text>
+      <Header name="mGuibao" title="Hello to" />
     </SafeAreaView>
   );
-};
+}
 
 export default App;
 
 const style = StyleSheet.create({
   App: {
     flex: 1,
-    backgroundColor: 'black',
-  },
-  title: {
-    color: 'white',
-    fontSize: 30,
+    // margin: 20,
+    backgroundColor: '#000',
   },
 });
