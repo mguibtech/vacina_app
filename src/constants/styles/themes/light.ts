@@ -1,8 +1,27 @@
-export const themeLight = {
+import {DefaltTheme} from 'styled-components';
+import {Colors} from './colors';
+
+export const themeLight: DefaltTheme = {
   colors: {
-    primary: 'white',
-    onPrimary: 'black',
-    secondary: 'yellow',
-    onSecondary: 'black',
+    primary: {
+      main: Colors.brand04,
+      onMain: Colors.white,
+    },
+    secondary: {
+      main: Colors.brand01,
+      onMain: Colors.white,
+    },
+    error: {
+      main: Colors.red,
+      onMain: Colors.white,
+    },
+    background: {
+      main: Colors.white,
+      onMain: Colors.black,
+    },
+    surface: {
+      main: Colors.neutrals,
+      onMain: Colors.white,
+    },
   },
 };

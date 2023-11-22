@@ -1,19 +1,19 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-  background-color: ${props => props.theme.colors.secondary};
+  background-color: ${({theme}) => theme.colors.secondary.main};
   border-width: 1px;
-  border-color: ${props => props.theme.colors.secondary};
+  border-color: ${({theme}) => theme.colors.secondary.main};
   padding: 10px;
   border-radius: 4px;
 `;
 
 export const Title = styled.Text`
-  color: ${props => props.theme.colors.onPrimary};
+  color: ${({theme}) => theme.colors.primary.onMain};
   font-size: 20px;
 `;
 
 export const Name = styled.Text`
-  color: ${props => props.theme.colors.onPrimary};
+  color: ${({theme}) => theme.colors.primary.onMain};
   font-size: 30px;
 `;
