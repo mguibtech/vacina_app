@@ -1,5 +1,6 @@
 import {DefaltTheme} from 'styled-components';
 import {Colors} from './colors';
+import {typographyCommon} from './common';
 
 export const themeLight: DefaltTheme = {
   colors: {
@@ -24,4 +25,5 @@ export const themeLight: DefaltTheme = {
       onMain: Colors.white,
     },
   },
+  typography: typographyCommon,
 };
